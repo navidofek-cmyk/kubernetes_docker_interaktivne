@@ -1,38 +1,48 @@
-# Docker a Kubernetes: Od nuly k hrdinovi
+# Docker & Kubernetes — interaktivní kurz
 
-Vitej! Tenhle tutorial je pro tebe, i kdyz jsi nikdy neslysel o Dockeru nebo Kubernetes.
-Budeme postupovat pomalu, krok za krokem. Jako ve hre — nejdriv lehke levely, pak tezsi.
+Interaktivní kurz pro úplné začátečníky. Od prvního `docker run` po produkční Kubernetes cluster.
+
+**Web kurzu: https://navidofek-cmyk.github.io/kubernetes_docker_interaktivne/**
 
 ---
 
 ## Co te ceka?
 
-### CAST 1 — Docker (krabickovani programu)
-| Lekce | Co se naucis |
-|-------|-------------|
-| [01 — Co je Docker?](docker/01-co-je-docker.md) | Proc Docker existuje a co dela |
-| [02 — Prvni kontejner](docker/02-prvni-kontejner.md) | Spustis svuj prvni program v Dockeru |
-| [03 — Dockerfile](docker/03-dockerfile.md) | Postavis vlastni krabicku |
-| [04 — Docker Compose](docker/04-docker-compose.md) | Vic krabicek spolupracuje |
+### Docker (lekce 01–07)
+| Lekce | Téma |
+|-------|------|
+| 01 | Co je Docker? Kontejnery a základní pojmy |
+| 02 | Tvůj první kontejner |
+| 03 | Dockerfile — napiš vlastní recept |
+| 04 | Images a vrstvy — jak Docker šetří místo |
+| 05 | Volumes — trvalá data |
+| 06 | Docker Compose — více kontejnerů najednou |
+| 07 | Docker Hub — sdílení images |
 
-### CAST 2 — Kubernetes (sef vsech krabicek)
-| Lekce | Co se naucis |
-|-------|-------------|
-| [05 — Co je Kubernetes?](kubernetes/05-co-je-kubernetes.md) | Kdo rika krabickam co maji delat |
-| [06 — Prvni Pod](kubernetes/06-prvni-pod.md) | Spustis app v Kubernetes |
-| [07 — Deployment](kubernetes/07-deployment.md) | Kubernetes hlida tvoje krabicky |
-| [08 — Service](kubernetes/08-service.md) | Jak krabicky mluvi s okolnim svetem |
-| [09 — Ingress](kubernetes/09-ingress.md) | Brana do tveho clusteru |
-| [10 — Vse dohromady](kubernetes/10-vse-dohromady.md) | Postavis kompletni aplikaci |
+### Kubernetes (lekce 08–15)
+| Lekce | Téma |
+|-------|------|
+| 08 | Co je Kubernetes? |
+| 09 | První Pod |
+| 10 | Deployment — Kubernetes hlídá tvoje aplikace |
+| 11 | Service — stabilní adresa pro Pody |
+| 12 | ConfigMap a Secret — konfigurace bez hesel v kódu |
+| 13 | Ingress — brána z internetu |
+| 14 | Helm — balíčky pro Kubernetes |
+| 15 | Kompletní projekt — od kódu po Kubernetes |
 
 ---
 
-## Co potrebujes mit nainstalovano
+## Jak spustit lokálně
+
+```bash
+python3 generator_webu.py
+cd web && python3 -m http.server 8080
+# → http://localhost:8080
+```
+
+## Co potřebuješ mít nainstalováno
 
 - Docker: https://docs.docker.com/get-docker/
 - kubectl: https://kubernetes.io/docs/tasks/tools/
-- minikube (pro lokalni Kubernetes): https://minikube.sigs.k8s.io/docs/start/
-
----
-
-> Zacni u lekce 01 a jdi poporade. Kazdou lekci si precti, zkus priklad, a pak jdi dal.
+- minikube: https://minikube.sigs.k8s.io/docs/start/
