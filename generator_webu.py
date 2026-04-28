@@ -210,6 +210,13 @@ SEKCE = [
         "popis":  "Ingress, Helm, kompletní deployment pipeline",
         "barva":  "#d2a8ff",
     },
+    {
+        "rozsah": range(16, 21),
+        "nazev":  "Pokročilé — pro hrdiny",
+        "ikona":  "🏆",
+        "popis":  "StatefulSet, RBAC, Monitoring, GitOps, produkční best practices",
+        "barva":  "#ffa657",
+    },
 ]
 
 
